@@ -33,7 +33,7 @@ Scroller = function( settings ) {
 	this.currentday       = settings.currentday;
 	this.order            = settings.order;
 	this.throttle         = false;
-	this.handle           = '<div id="infinite-handle"><span>' + text.replace( '\\', '' ) + '</span></div>';
+	this.handle           = '<div id="infinite-handle"><span><button>' + text.replace( '\\', '' ) + '</button></span></div>';
 	this.click_handle     = settings.click_handle;
 	this.google_analytics = settings.google_analytics;
 	this.history          = settings.history;
@@ -137,7 +137,7 @@ Scroller.prototype.query = function() {
 		scripts        : window.infiniteScroll.settings.scripts,
 		styles         : window.infiniteScroll.settings.styles,
 		query_args     : window.infiniteScroll.settings.query_args,
-		last_post_date : window.infiniteScroll.settings.last_post_date,
+		last_post_date : window.infiniteScroll.settings.last_post_date
 	};
 };
 
